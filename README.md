@@ -234,7 +234,7 @@
 - folder_mail.folder
 
 ### Выбор СУБД
-- для "user", "folder", "folder_mail", "mail", "draft_mail", "attachment", "contact_book" - Postgres
+- для "user", "folder", "folder_mail", "mail", "draft_mail", "attachment", "contact_book" - Cassandra
 - для "statistics_user", "statistics_mail" - Clickhouse, т.к. колонычные БД лучше всего подходят для аналитики больших данных
 - для вложений будем использовать готовые объектные хранилища (S3)
 - для кэширования и храненя сессионных данных - Redis
