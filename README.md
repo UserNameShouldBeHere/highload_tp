@@ -123,6 +123,7 @@
 |avatar|ссылка на аватар в S3|150Б|
 |registered_at|дата регистрации|8Б|
 |add_data|дополнительная информация о пользователе||
+|last_online|последняя дата входа|8Б|
 
 Примерное кол-во записей: 150 млн
 Объем: 44 ГБ
@@ -198,7 +199,7 @@
 
 ## 6. Физическая схема БД
 
-![image](https://github.com/user-attachments/assets/d42d2709-ccb8-4c63-8c88-0e500d2df9ad)
+![image](https://github.com/user-attachments/assets/d501f222-d700-4167-bf26-634d52f45250)
 
 ### Индексы
 - user.id, user.address
