@@ -226,9 +226,17 @@
 
 ![image](https://github.com/user-attachments/assets/d501f222-d700-4167-bf26-634d52f45250)
 
+|Таблица|Запросы|
+|-|-|
+|user|- select ... from user where id = ... <br> - update table user set avatar = ... where id = ...|
+|contact_book|- select ... from contact_book where user = ...|
+|mail|- select ... from mail where from = '...' order by sent_at desc limit 30 offset 0 <br> - select ... from mail where from = '...' and title = '...' order by sent_at desc limit 30 offset 0 <br> - select ... from mail where id = ... <br> - update table mail set is_checked = ... where id = ... <br> - select ... from mail where from = '...' and id in (select ... from folder_mail where folder = ...) order by sent_at desc limit 30 offset 0|
+|draft_mail|- select ... from draft_mail where from = '...' limit 10 offset 0 <br> - update table draft_mail set ... where id = ...|
+|folder|- select ... from folder where owner = ... order by name asc|
+
 ### Индексы
 - user.id, user.address
-- mail.id, mail.to, mail.from
+- mail.id, mail.to, mail.from, mail.sent_at
 - attachment.id
 - folder.owner
 - folder_mail.folder
