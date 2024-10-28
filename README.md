@@ -236,7 +236,9 @@
 
 ### Индексы
 - user.id, user.address
-- mail.id, mail.to, mail.from, mail.sent_at
+- contact_book.user
+- mail.id
+- двойные индексы: mail.to - mail.sent_at, mail.from - mail.sent_at, mail.title - mail.sent_at
 - attachment.id
 - folder.owner
 - folder_mail.folder
@@ -258,8 +260,16 @@
 - для S3: https://pkg.go.dev/github.com/minio/minio-go/v7
 - для Redis: https://pkg.go.dev/github.com/redis/go-redis/v9
 
+## 7. Алгоритмы
+
+|Технология|Область применения|Мотивационная часть|
+|-|-|-|
+|SHA256|хэширование паролей|надежный алгоритмы, не допускающий взлом перебором, что защитит при утечки базы данных|
+|SSE-S3|алгоритм шифрования в AWS S3|защита данных от перехвата|
+|поиск в бд|||
 
 ## 8. Технологии
+
 |Технология|Область применения|Мотивационная часть|
 |-|-|-|
 |Go|бэкэнд|статически типизированный ЯП, хорошо поддерживающий многопоточную разработку, с простым синтаксисом, что ускорит разработку|
