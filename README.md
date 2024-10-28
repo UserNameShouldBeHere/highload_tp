@@ -237,8 +237,7 @@
 ### Индексы
 - user.id, user.address
 - contact_book.user
-- mail.id
-- двойные индексы: mail.to - mail.sent_at, mail.from - mail.sent_at, mail.title - mail.sent_at
+- mail.id, mail.from, mail.title, mail.sent_at
 - attachment.id
 - folder.owner
 - folder_mail.folder
@@ -266,7 +265,7 @@
 |-|-|-|
 |SHA256|хэширование паролей|надежный алгоритмы, не допускающий взлом перебором, что защитит при утечки базы данных|
 |SSE-S3|алгоритм шифрования в AWS S3|защита данных от перехвата|
-|поиск в бд|||
+|gzip|сжатие запросов|уменьшает объем передаваемых данных и увеличивает скорость|
 
 ## 8. Технологии
 
