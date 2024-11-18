@@ -304,4 +304,4 @@
 
 # 10. Схема проекта
 
-![image](https://github.com/user-attachments/assets/9d75d84f-75f4-448c-b80c-3a958d67456f)
+![image](https://github.com/user-attachments/assets/54b74506-fb6b-435b-a045-cad71a774446)
