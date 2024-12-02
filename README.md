@@ -224,7 +224,7 @@
 
 ## 6. Физическая схема БД
 
-![image](https://github.com/user-attachments/assets/0bf2311c-afe8-415e-9c5a-6fc4bb3f283c)
+![image](https://github.com/user-attachments/assets/5456221f-dab3-4bee-af62-b4a2aaa8684b)
 
 |Таблица|Запросы|
 |-|-|
@@ -304,4 +304,4 @@
 
 # 10. Схема проекта
 
-![image](https://github.com/user-attachments/assets/54b74506-fb6b-435b-a045-cad71a774446)
+![image](https://github.com/user-attachments/assets/d387db5b-4775-4a73-9f5f-fc21ab86da81)
