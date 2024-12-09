@@ -323,7 +323,7 @@
 |kubenode sso|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe256GB / 10GB/s|1|2400|
 |kubenode gateway|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 25Gb/s|2|2800|
 |kubenode mail|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 25Gb/s|4|2800|
-|kubenode clickhouse|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe4TB / 10Gb/s|6|2800|
+|kubenode clickhouse|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe4TB / 10Gb/s|4|2800|
 |kubenode postgres|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 10Gb/s|2|2500|
 |kubenode redis|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe256GB / 10Gb/s|3|2400|
 |kubenode kafka|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe512GB / 10Gb/s|2|2500|
