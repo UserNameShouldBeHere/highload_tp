@@ -304,6 +304,27 @@
 
 # 10. Схема проекта
 
-![image](https://github.com/user-attachments/assets/55f12f31-4a7b-41ea-bee4-c272f4356a38)
+![image](https://github.com/user-attachments/assets/07d3133a-65b4-4686-85f3-b45f1c5301eb)
 
-# 11. 
+# 11. Список серверов
+|Сервис|Цилевая нагрузка, rps|CPU|RAM, GB|Сеть, Гбит/с|
+|-|-|-|-|-|
+|sso|1000|10|22|0.0029|
+|gateway (проверка сессии)|53000|64|64|394|
+|mail|53000|106|128|394|
+|clickhouse|50|16|32|23|
+|postgres|1000|32|32|0.0029|
+|redis|53000|16|16|22|
+|kafka|65000|64|32|31|
+|minio s3|8000|64|64|201|
+
+|Сервис|Хостинг|Конфигурация|Количество|Стоимость за единицу, евро|
+|-|-|-|-|-|
+|kubenode sso|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe256GB / 10GB/s|1|2400|
+|kubenode gateway|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 25Gb/s|2|2800|
+|kubenode mail|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 25Gb/s|4|2800|
+|kubenode clickhouse|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe4TB / 10Gb/s|6|2800|
+|kubenode postgres|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 10Gb/s|2|2500|
+|kubenode redis|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe256GB / 10Gb/s|3|2400|
+|kubenode kafka|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe512GB / 10Gb/s|2|2500|
+|kubenode minio|собственный|1xAMD EPYC 7313P / 64GB / 24xHDD20TB / 25Gb/s|45|13000|
