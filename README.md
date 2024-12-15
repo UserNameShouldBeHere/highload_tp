@@ -224,7 +224,7 @@
 
 ## 6. Физическая схема БД
 
-![image](https://github.com/user-attachments/assets/5456221f-dab3-4bee-af62-b4a2aaa8684b)
+![image](https://github.com/user-attachments/assets/1f6b5f3c-e51b-4748-be10-e928e1ae4968)
 
 |Таблица|Запросы|
 |-|-|
@@ -243,18 +243,17 @@
 ### Индексы
 - user.id, user.address
 - contact_book.user
-- inbox_mail.id, inbox_mail.title, inbox_mail.sent_at
+- inbox_mail.id, inbox_mail.title, inbox_mail.sent_at, inbox_mail.folders
 - outbox_mail.id, outbox_mail.title, outbox_mail.sent_at
 - attachment.id
 - folder.owner, folder.name
-- folder_mail.folder
 - to_user_mail.user, to_user_mail.mail
 
 ### Выбор СУБД
-- для "user", "folder", "folder_mail", "mail", "draft_mail", "attachment", "contact_book" - sqlite3
-- для "statistics_user", "statistics_mail" - Clickhouse, т.к. колонычные БД лучше всего подходят для аналитики больших данных
+- для "user", "folder", "inbox_mail", "outbox_mail", "draft_mail", "contact_book" - sqlite3
+- для "statistics" - Clickhouse, т.к. колонычные БД лучше всего подходят для аналитики больших данных
 - для вложений будем использовать готовые объектные хранилища (S3)
-- для кэширования и храненя сессионных данных - Redis
+- для кэширования и таблицы "session" - Redis
 
 ### Шардирование
   Шардироваться данные будут по папкам пользователей, т.к. один пользователь содержит всю свою информацию: настройки, БД со входящими, контактами и т.д. Примерное количество шардов - 1 000
