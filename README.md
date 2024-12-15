@@ -162,7 +162,7 @@
 
 Объем: 23.6 ПБ
 
-Чтение: 0.5 МБ/с
+Чтение: 1.1 МБ/с
 
 Запись: 1.8 ГБ/с
 
@@ -312,6 +312,7 @@
 |sso|1000|10|22|0.0029|
 |gateway (проверка сессии)|53000|64|64|394|
 |mail|53000|106|128|394|
+|sqlite3|5000|64|9|
 |clickhouse|50|16|32|23|
 |postgres|1000|32|32|0.0029|
 |redis|53000|16|16|22|
@@ -323,6 +324,7 @@
 |kubenode sso|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe256GB / 10GB/s|1|2400|
 |kubenode gateway|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 25Gb/s|2|2800|
 |kubenode mail|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 25Gb/s|4|2800|
+|kubenode sqlite3|собственный|1xAMD EPYC 7313P / 32GB / 1xHDD18TB / 10Gb/s|2|3800|
 |kubenode clickhouse|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe4TB / 10Gb/s|3|2800|
 |kubenode postgres|собственный|1xAMD EPYC 7313P / 32GB / 1xNVMe256GB / 10Gb/s|2|2500|
 |kubenode redis|собственный|1xAMD EPYC 7313P / 16GB / 1xNVMe256GB / 10Gb/s|3|2400|
