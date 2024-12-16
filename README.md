@@ -307,7 +307,7 @@
 
 # 10. Схема проекта
 
-![image](https://github.com/user-attachments/assets/07d3133a-65b4-4686-85f3-b45f1c5301eb)
+![image](https://github.com/user-attachments/assets/7b026411-bacd-4301-a2b4-c21540e36a66)
 
 # 11. Список серверов
 |Сервис|Цилевая нагрузка, rps|CPU|RAM, GB|Сеть, Гбит/с|
